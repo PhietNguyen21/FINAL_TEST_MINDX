@@ -1,0 +1,137 @@
+:root {
+    --color-black: #151b32;
+    --color-blue-2: #bfc8e6;
+    --color-blue: #849fff;
+    --color-white: #151b32;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* main */
+
+.main {
+    background-color: #e6eaf8;
+    height: 1000px;
+    padding: 4rem 15rem;
+}
+
+.main-content {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+/* Header */
+header h1.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-left {
+    border: 1px solid #bfc8e5;
+    padding: 10px 20px;
+}
+
+.content-left input {
+    border: none;
+}
+
+.content-left::placeholder {
+    font-size: 1rem;
+}
+
+.content-left input:focus {
+    outline: none;
+}
+.content-right ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.content-right ul li {
+    display: inline;
+    padding: 10px 20px;
+}
+
+.content-right ul li.active {
+    background-color: #849fff;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.content-right ul li.active a {
+    color: white;
+}
+
+.content-right ul li:hover a {
+    border-bottom: 2px solid #849fff;
+}
+
+.content-right ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+
+
+/* LIST CARD */
+.list-card{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    margin-top: 80px;
+    gap: 10px;
+}
+
+.item-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 40px 10px;
+    cursor: pointer;
+}
+
+.item-card.active
+{
+    border: 1px solid #bfc8e5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #bfc8e5;
+}
+
+.info-card h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.info-card p{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.hash span{
+    color: #516FD4;
+    padding: 2px 10px;
+    border: 1px solid #516FD4;
+    font-size: 0.6rem;
+    border-radius: 8px;
+}
